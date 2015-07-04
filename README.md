@@ -1,3 +1,7 @@
+# Hoodie Facebook Login Plugin
+
+> Use Facebook credentials to login into your hoodie app.
+
 #### Installation
 
 ```bash

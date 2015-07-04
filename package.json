@@ -1,6 +1,6 @@
 {
   "name": "hoodie-plugin-facebook-login",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "index.js",
   "description": "Use Facebook credentials to login into your hoodie app",
   "devDependencies": {
