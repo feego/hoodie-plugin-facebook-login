@@ -20,13 +20,10 @@ var APP_ID = 'APP_ID'
 ```js
 // sign in
 hoodie.facebookSession.logIn()
-
 // sign out
 hoodie.facebookSession.logOut()
-
 // check if there's an opened session
 hoodie.facebookSession.isLogged()
-
 // get current Facebook Access Token
 hoodie.facebookSession.getAccessToken()
 ```
