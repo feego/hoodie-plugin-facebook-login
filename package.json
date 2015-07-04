@@ -1,0 +1,25 @@
+{
+  "name": "hoodie-plugin-facebook-login",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "Hoodie plugin for Facebook authentication",
+  "devDependencies": {
+    "hoodie-plugin-users": "^2.1.4"
+  },
+  "hoodie": {
+    "plugins": [
+      "hoodie-plugin-users"
+    ]
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bs58": "^1.2.0",
+    "hoodie": "0.6.5",
+    "hoodie-server": "0.9.19",
+    "lodash": "^2.4.1"
+  },
+  "scripts": {
+    "test:own": "grunt test",
+    "test": "grunt ci --verbose"
+  }
+}
