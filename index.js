@@ -6,7 +6,6 @@ var https = require('https')
 
 // Plugin contant values
 var APP_ID, APP_SECRET,
-    APP_ACCESS_TOKEN = APP_ID + '|' + APP_SECRET,
     FACEBOOK_API_BASE_URL = 'graph.facebook.com'
 
 function validateFacebookAccessToken(accessToken) {
@@ -104,6 +103,7 @@ function addOrUpdateUserInHoodie(hoodie, facebookUserId) {
 module.exports = function (hoodie, doneCallback) {
     APP_ID = hoodie.config.get("facebookLoginPlugin__appKey")
     APP_SECRET = hoodie.config.get("facebookLoginPlugin__appSecret")
+    APP_ACCESS_TOKEN = APP_ID + '|' + APP_SECRET
 
     // Plugin initialization tasks
     hoodie.task.on('facebook-login-success:add', function (database, data) {
